@@ -1,0 +1,147 @@
+ *,
+ *::before,
+ *::after{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html{
+     font-size: 62.5%;
+ }
+
+ body{
+     font-size: 1.6rem;
+ }
+
+ .btn{
+     cursor: pointer;
+     outline: none;
+     border: none;
+     color: white;
+     background-color: rgb(33,150,243);
+     margin: 10px;
+     padding: 7px 35px;
+     font-size: 2rem;
+     transition: all 0.3s;
+ }
+
+ .btn:hover{
+     background-color: rgb(7, 139, 247);
+ }
+
+ /* modal */
+ .wrapper{
+     display: flex;
+     justify-content: center;
+ }
+
+ .modal{
+     position: relative;
+     top: 0;
+     max-width: 90vw;
+     width: 600px;
+     background-color: white;
+     box-shadow: 4px 4px 8px rgb(51, 46, 46);
+     animation: topBottom 0.5s ease-in;
+    transition: all 0.5s;
+ }
+
+ @keyframes topBottom{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+ .modal img{
+     display: block;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 20px auto  ;
+ }
+
+ .cross-sign{
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     cursor: pointer;
+ }
+
+ .cross-sign::after{
+     content: "";
+     position: relative;
+     top: 0;
+     left: 0;
+     height: 15px;
+     width: 15px;
+     background-color: rgb(34, 33, 33);
+ }
+
+ /* form */
+ .form{
+     display: flex;
+     flex-direction: column;
+     padding: 10px;
+ }
+
+ .form > * {
+     margin: 8px 0;
+ }
+
+ label[class]{
+     display: flex;
+     flex-direction: column;
+ }
+
+input[placeholder]{
+    padding: 8px;
+}
+
+[type="submit"]{
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 1.6rem;
+    background-color: rgb(76,175,80);
+}
+
+[type='submit']:hover{
+    background-color: rgb(44, 233, 51);
+}
+
+ [type="checkbox"]{
+     margin-right: 10px;
+ }
+
+ /* footer */
+ footer{
+     padding: 15px;
+     display: flex;
+     justify-content: space-between;
+     background-color: rgb(241,241,241);
+ }
+
+ footer button{
+     outline: none;
+     border: none;
+     padding: 8px;
+     color: white;
+     background-color: rgb(244,67,54);
+ }
+
+ footer button:hover{
+    background-color: rgb(76,175,80);
+ }
+
+ a{
+     color: black;
+ }
+
+ a:hover{
+     text-decoration: none;
+ }
